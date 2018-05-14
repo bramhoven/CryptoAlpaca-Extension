@@ -1,24 +1,33 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="popup.css" />
 
   <script src="popup.js"></script>
 </head>
+
 <body>
   <div class="container">
     <h1>Crypto Alpaca</h1>
 
-    <button class="popup-button" id="open-ca">Open CryptoAlpaca</button>
+    <button class="button" id="open-ca">Open CryptoAlpaca</button>
 
     <br/>
 
     <p>Helper Extension</p>
 
+    <hr/>
+
+    <p class="input-label">Feeding amount:</p>
+    <br/>
+    <input class="input" id="feeding-amount" type="number" min="0.002" max="2" step="0.001" value="0.002" />
+    <button class="button" id="feed">Feed selected alpaca's</button>
+
     <div id="alpaca">
-      
     </div>
   </div>
 </body>
+
 </html>

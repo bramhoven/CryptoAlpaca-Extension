@@ -61,6 +61,7 @@ function loadAlpacas(alpacas) {
 function addAlpaca(alpaca) {
   var gene = alpaca.gene;
   var alpacaDiv = document.createElement("div");
+  alpacaDiv.dataset.id = alpaca.id;
   alpacaDiv.classList.add("alpaca-div", alpacaBackgrounds[alpaca.id % alpacaBackgrounds.length]);
 
   var ear = "/image/alpaca/ear" + gene.substring(1,2) + ".svg";
