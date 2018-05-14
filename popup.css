@@ -1,0 +1,125 @@
+.container {
+  width: 550px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+
+.container h1 {
+  display: inline-block;
+  margin: 0;
+  font-weight: 400;
+  color: #373737
+}
+
+.container p {
+  display: inline-block;
+  margin: 0;
+  font-weight: 500;
+  color: #7e7e7e;
+}
+
+.popup-button {
+  float: right;
+  padding: 15px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow:
+    0 4px 8px 0 rgba(0,0,0,0.12),
+    0 2px 4px 0 rgba(0,0,0,0.08);
+
+  background-color: #FFFFFF;
+  color: #5c5c5c;
+  
+  transition: transform .3s, box-shadow .3s;
+}
+
+.popup-button:hover {
+  box-shadow:
+    0 4px 12px 0 rgba(0,0,0,0.12),
+    0 2px 6px 0 rgba(0,0,0,0.08);
+
+  transform: scale(1.02);
+}
+
+#alpaca {
+  display: table;
+  margin-top: 10px;
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.alpaca-div {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 5px;
+  box-shadow:
+    0 4px 8px 0 rgba(0,0,0,0.12),
+    0 2px 4px 0 rgba(0,0,0,0.08);
+
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.alpaca-div:hover {
+  box-shadow:
+    0 4px 12px 0 rgba(0,0,0,0.12),
+    0 2px 6px 0 rgba(0,0,0,0.08);
+
+  transform: scale(1.05);
+}
+
+.active-alpaca {
+  border: 1px solid #10a300;
+  box-sizing: border-box;
+}
+
+.alpaca-img {
+  width: 100px!important;
+  height: 100px!important;
+  position: absolute!important;
+}
+
+.alpaca-id-p {
+  top: 0;
+  float: right;
+  margin: 0.2rem!important;
+  font-size: 0.8rem;
+  color: #373737!important;
+}
+
+/* CryptoAlpaca Backgrounds */
+.bg-b0e0e6 {
+  background-color: #b0e0e6;
+}
+
+.bg-ffeae5 {
+  background-color: #ffeae5;
+}
+
+.bg-ddf7be {
+  background-color: #ddf7be;
+}
+
+.bg-e6e6fa {
+  background-color: #e6e6fa;
+}
+
+.bg-ffe4e1 {
+  background-color: #ffe4e1;
+}
+
+.bg-d3ffce {
+  background-color: #d3ffce;
+}
+
+.bg-f0f8ff {
+  background-color: #f0f8ff;
+}
+
+.bg-c6e2ff {
+  background-color: #c6e2ff;
+}
