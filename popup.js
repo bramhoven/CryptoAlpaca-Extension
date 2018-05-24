@@ -1,6 +1,7 @@
 var tabId;
 var accessToken;
 var alpacaBackgrounds = ["bg-b0e0e6", "bg-ffeae5", "bg-ddf7be", "bg-e6e6fa", "bg-ffe4e1", "bg-d3ffce", "bg-f0f8ff", "bg-c6e2ff", "bg-faebd7"];
+var constellations = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
 
 window.onload = function() {
   if(localStorage.getItem("ACCESS_TOKEN") === null) {
@@ -109,6 +110,16 @@ function addAlpaca(alpaca) {
   idLabel.textContent = alpaca.id;
   idLabel.classList.add("alpaca-id-p");
   alpacaDiv.appendChild(idLabel);
+
+  var charLabel = document.createElement("p");
+  charLabel.textContent = alpaca.charm;
+  charLabel.classList.add("alpaca-char-p");
+  alpacaDiv.appendChild(charLabel);
+
+  var constLabel = document.createElement("p");
+  constLabel.textContent = constellations[alpaca.constellation-1];
+  constLabel.classList.add("alpaca-const-p");
+  alpacaDiv.appendChild(constLabel);
 
   document.getElementById("alpaca").appendChild(alpacaDiv);
 

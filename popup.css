@@ -124,6 +124,31 @@ hr {
   color: #373737!important;
 }
 
+.alpaca-char-p {
+  top: 0;
+  float: left;
+  margin: 0.2rem!important;
+  font-size: 0.8rem;
+  color: #373737!important;
+}
+
+.alpaca-const-p {
+  position: absolute!important;
+  top: 60%;
+  left: 50%;
+  
+  margin: 0.2rem!important;
+  font-size: 1.1rem;
+  color: #373737!important;
+  text-shadow:
+		-1px -1px 0 #ffffff,
+		1px -1px 0 #ffffff,
+		-1px 1px 0 #ffffff,
+		1px 1px 0 #ffffff;
+
+  transform: translateX(-55%);
+}
+
 /* CryptoAlpaca Backgrounds */
 .bg-b0e0e6 {
   background-color: #b0e0e6;
